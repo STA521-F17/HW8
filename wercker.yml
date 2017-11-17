@@ -1,12 +1,12 @@
-box: merliseclyde/predictive-modeling-bart
+box: merliseclyde/predictive-modeling
 
 build:
   steps:
-    - script:
-        name: Check for allowed files
-        code: |
-          Rscript -e "source('https://raw.githubusercontent.com/STA521-S17/HW7/master/whitelist.R')"
-    - script:
+      - script:
         name: Render R markdown
         code: |
           Rscript -e "install.packages('e1071',repos='https://cloud.r-project.org'); library(rmarkdown);render('HW7.Rmd')"
+      - script:
+        name: Check for allowed files
+        code: |
+          Rscript -e "source('https://raw.githubusercontent.com/STA521-F17/HW8/master/whitelist.R')"
