@@ -58,9 +58,9 @@ set.seed(42)
 
 2.  Using the the training data,  fit a random forest model to the data to predict probability of voting republican in the election.  Comment on the  results - which variables are important?  what insights does the model provide  (support with graphics if possible)?    
 
-3.  Repeat 3, but using boosting.
+3.  Repeat 2, but using boosting.
 
-4.  Repeat 3, but using bart (there is `BART` and `BayesTree` in addition to BartMachines (needs java)) Comment on any partial dependence plots or other output that is of interest in explaining the model.
+4.  Repeat 2, but using bart (there is `BART` and `BayesTree` in addition to BartMachines (needs java)) Comment on any partial dependence plots or other output that is of interest in explaining the model.
 
 5.  Using `gam` or `bam` from `mgcv`  fit a generalized additive model to predict probability of voting republican using smoothing splines for fitting examining nonlinear functions of the continuous variables.  Are there any interactions that you might expect will be important (based on tree models or information from Ch 14 Gelman & Hill?)
 In `mgcv` you may allow different curves for levels of a factor using the `by` option:
